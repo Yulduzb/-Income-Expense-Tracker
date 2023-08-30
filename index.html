@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+       <div class="ledger">
+        <h2>Income Expense Tracker</h2>
+        <h4>Your Balance</h4>
+        <h1 id="balance"></h1>
+        <div class="income-exp-container">
+            <div class="income">
+                <h4>Income</h4>
+                <p id="income-amount" class="amount plus"></p>
+            </div>
+            <div class="expense">
+                <h4>Expense</h4>
+                <p id="expense-amount" class="amount minus">0.00 &#8378;</p>
+            </div>
+        </div>
+        <form action="#" id="form">
+            <div class="form-control">
+                <label for="desc">Description</label>
+                <input type="text" name="desc" id="desc" placeholder="Enter Desciption"/>
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount</label>
+                <input type="number" name="amount" id="amount" placeholder="Enter Amount"/>
+
+            </div>
+            <button class="btn" type="submit"> Add Transaction</button>
+        </form>
+       </div>
+
+
+       <div class="transaction">
+        <h3>Transaction Details</h3>
+           <ul class="trans" id="trans">
+                 <!--   <li class="expense">Insurance
+                 <span>-1500</span>
+                 <button class="deleteBtn"><i class="fa-solid fa-xmark"></i></button>
+            </li>
+
+            <li class="income">Salary
+                <span>3500</span>
+                <button class="deleteBtn"><i class="fa-solid fa-xmark"></i></button>
+           </li>
+
+           <li class="expense">Food
+            <span>-300</span>
+            <button class="deleteBtn"><i class="fa-solid fa-xmark"></i></button>
+       </li>-->
+        </ul> 
+       </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
